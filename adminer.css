@@ -452,6 +452,7 @@ input.wayoff {
 .binary   { color: var(--red); }
 .function, .number, .datetime { text-align: right; color: #fb923c; }
 .type     { width: 15ex; color: var(--muted); }
+.primary-key { color: var(--emerald); }
 
 /* ── Tabela listrada ───────────────────────────────────────── */
 .odds tbody tr {
@@ -1022,6 +1023,10 @@ td a.edit::before {
 
     #content {
         margin-left: 10px !important;
+    }
+
+    #content #table td.null {
+        font-style: italic;
     }
 
     #lang {
