@@ -549,7 +549,7 @@ input.wayoff {
 
 /* ── Tamanhos ──────────────────────────────────────────────── */
 .size {
-    width: 7ex;
+    width: 14ex;
 }
 
 .help {
@@ -966,6 +966,34 @@ input.wayoff {
 ::selection {
     background: rgba(245,158,11,.25);
     color: #fff;
+}
+
+td a.edit {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    padding: 0 !important;
+    border: none !important;
+    border-radius: 0;
+    color: transparent !important;
+    text-shadow: none !important;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+td a.edit::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    display: block;
+    background: center / 16px 16px no-repeat url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23f59e0b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M17,20H1c-0.6,0-1-0.4-1-1V3c0-0.6,0.4-1,1-1h9v2H2v14h14v-8h2v9C18,19.6,17.6,20,17,20z'/%3E%3Cpath d='M9.3,10.7c-0.4-0.4-0.4-1,0-1.4l9-9c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-9,9C10.3,11.1,9.7,11.1,9.3,10.7z'/%3E%3C/svg%3E");
+    pointer-events: none;
 }
 
 /* ── Responsive ────────────────────────────────────────────── */
