@@ -717,6 +717,10 @@ input.wayoff {
     box-shadow: 4px 0 8px rgba(0,0,0,.5);
 }
 
+#tables li.hidden {
+    display: none;
+}
+
 #dbs {
     overflow: hidden;
     padding: .6em 1em;
